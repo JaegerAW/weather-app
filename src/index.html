@@ -4,23 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Margarine&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="maindisplay">
       <div class="today">
-        <div class="date"></div>
-        <div class="day"></div>
-        <div class="time"></div>
-        <div class="clock"></div>
-        <div class="country"></div>
-        <div class="city"></div>
-        <div class="temperature"></div>
-        <div class="rain"></div>
-
-        <div class="windkmph"></div>
-        <div class="humidity"></div>
+        <div class="todaydate"></div>
+        <div class="todaytime"></div>
+        <div class="todaycountry"></div>
+        <div class="todaycity"></div>
+        <div class="todayweather"></div>
+        <div class="todaywind"></div>
+        <div class="todayhumidity"></div>
+        <div class="todaytemperaturecelcius"></div>
+        <div class="todaytemperaturefahrenheit"></div>
       </div>
+      <div class="forecast"></div>
     </div>
+
+    <!--we will populate the main display with dom manipulation-->
     <div class="searchbar">
       <input
         type="text"

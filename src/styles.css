@@ -9,5 +9,129 @@ body {
   align-items: center;
 }
 .searchbar {
-  float: right;
+  margin-top: 20px;
+}
+
+.searchinput {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+}
+.searchbutton {
+  height: 35px;
+  background-color: white;
+  color: black;
+  font-family: "Margarine", sans-serif;
+  border: 2px solid white;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.maindisplay {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  height: 800px;
+  gap: 10px;
+  width: 800px;
+}
+
+.today {
+  /*work on today card */
+  display: grid;
+  grid-template-rows: 2fr 1fr 3fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  justify-content: center;
+  text-align: center;
+}
+
+.todaycity {
+  grid-row: 1/2;
+  font-size: 50px;
+  align-self: last baseline;
+  font-family: "Margarine", sans-serif;
+  font-weight: bold;
+}
+
+.todaydate {
+  grid-row: 2/3;
+  align-self: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.todaytemperaturecelcius {
+  grid-row: 3/4;
+  font-size: 150px;
+  font-family: "Margarine", sans-serif;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.todaytemperaturefahrenheit {
+  grid-row: 4/5;
+  font-size: 30px;
+  font-family: "Margarine", sans-serif;
+}
+.todayweather {
+  grid-row: 5/6;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  align-self: center;
+}
+
+.todaywind {
+  grid-row: 6/7;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.todayhumidity {
+  grid-row: 7/8;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  align-self: center;
+  margin-bottom: 20px;
+}
+.forecast {
+  display: flex;
+  justify-content: space-evenly;
+  flex: auto;
+}
+
+.forecastcard {
+  height: 220px;
+  border-radius: 15px;
+  min-width: 170px;
+  border: 2px solid white;
+  display: grid;
+  grid-template-rows: 2fr 2fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+.forecastdate {
+  grid-row: 1/2;
+  font-family: "Roboto", sans-serif;
+  align-self: last baseline;
+}
+.forecasttemperaturecelcius {
+  grid-row: 2/3;
+  font-family: "Margarine", sans-serif;
+  font-size: 30px;
+}
+
+.forecasttemperaturefahrenheit {
+  grid-row: 3/4;
+  font-family: "Margarine", sans-serif;
+  font-size: 18px;
+  align-self: first baseline;
+}
+
+.forecastweather {
+  grid-row: 4/5;
+  font-family: "Roboto", sans-serif;
+  font-family: 18px;
+  align-self: first-baseline;
+  padding-bottom: 8px;
 }
